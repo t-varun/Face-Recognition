@@ -63,3 +63,30 @@ Get more information about OpenCV at it's [Official Website](https://opencv.org/
 Google built the underlying TensorFlow software with the C++ programming language. But in developing applications for this AI engine, coders can use either C++ or Python, the most popular language among deep learning researchers.
 
 For more details about TensorFlow, you can check [TensorFlow Official Website](https://www.tensorflow.org/)
+
+## Credits:
+
+* Harrison[GitHub](https://github.com/sentdex) by Harrison.
+
+## Contributing:
+
+Contributions are welcome!  For bug reports or requests please [submit an issue](https://github.com/t-varun/Face-Recognition/issues).
+
+## Contact-info:
+
+Feel free to contact me to discuss any issues, questions, or comments.
+
+* Email: [totakura.varun@gmail.com](mailto:totakura.varun@gmail.com)
+* GitHub: [t-varun](https://github.com/t-varun)
+* LinkedIn: [t-varun](https://www.linkedin.com/in/t-varun)
+* Blogspot: [varun-portfolio](https://varun-portfolio.blogspot.com)
+
+## Licence:
+
+This repository contains a variety of content; some developed by VARUN, and some from third-parties.  The third-party content is distributed under the license provided by those parties.
+
+The content developed by VARUN is distributed under the following license:
+
+*I am providing code and resources in this repository to you under an open source license.  Because this is my personal repository, the license you receive to my code and resources is from me.*
+
+More about Licence at [link](https://github.com/t-varun/Face-Recognition/blob/master/LICENSE).
