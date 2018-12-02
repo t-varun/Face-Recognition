@@ -50,13 +50,13 @@ For more details about TensorFlow installation, you can check [TensorFlow Instal
 
 NumPy is a package in Python used for Scientific Computing. NumPy package is used to perform different operations. The ndarray (NumPy Array) is a multidimensional array used to store values of same datatype. These arrays are indexed just like Sequences, starts with zero.
 
-Get more info about Numpy at it's Official [Website](http://www.numpy.org/).
+Get more information about Numpy at it's [Official Website](http://www.numpy.org/).
 
 - **OpenCv** : OpenCV-Python is a library of Python bindings designed to solve computer vision problems. Python is a general purpose programming language started by Guido van Rossum(Author of Python) that became very popular very quickly, mainly because of its simplicity and code readability.
 
 OpenCV (Open Source Computer Vision Library) is an open source computer vision and machine learning software library. OpenCV was built to provide a common infrastructure for computer vision applications and to accelerate the use of machine perception in the commercial products.
 
-Get more information about OpenCV at it's Official [Website](https://opencv.org/).
+Get more information about OpenCV at it's [Official Website](https://opencv.org/).
 
 - **Tensorflow** : TensorFlow is an open-source software library for dataflow programming across a range of tasks. It is a symbolic math library, and is also used for machine learning applications such as neural networks. It is used for both research and production at Google.
 
