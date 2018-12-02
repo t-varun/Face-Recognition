@@ -8,10 +8,10 @@ A facial recognition system is a technology capable of identifying or verifying 
 - [Python downloads(Use the latest verion of Python)](https://www.python.org/downloads/).
 
 #### Numpy
-- [Install Numpy Package](http://www.numpy.org/)
+- [Install Numpy Package](http://www.numpy.org/).
 
 #### OpenCV
-- [Install OpenCV Package](https://opencv.org/)
+- [Install OpenCV Package](https://opencv.org/).
 
 #### Tensorflow
 - [Tensorflow downloads](https://www.tensorflow.org/install/).
@@ -43,7 +43,7 @@ or (if you want GPU support):
 pip install tensorflow_gpu
 ```
 
-For more details about TensorFlow installation, you can check [TensorFlow Installation Guide](https://www.tensorflow.org/install/)
+For more details about TensorFlow installation, you can check [TensorFlow Installation Guide](https://www.tensorflow.org/install/).
 
 ## About:
 - **Numpy** : NumPy is the fundamental package for scientific computing with Python. It contains among other things: a powerful N-dimensional array object. sophisticated (broadcasting) functions.
@@ -62,7 +62,7 @@ Get more information about OpenCV at it's [Official Website](https://opencv.org/
 
 Google built the underlying TensorFlow software with the C++ programming language. But in developing applications for this AI engine, coders can use either C++ or Python, the most popular language among deep learning researchers.
 
-For more details about TensorFlow, you can check [TensorFlow Official Website](https://www.tensorflow.org/)
+For more details about TensorFlow, you can check [TensorFlow Official Website](https://www.tensorflow.org/).
 
 ## Credits:
 
@@ -92,6 +92,6 @@ This repository contains a variety of content; some developed by VARUN, and some
 
 The content developed by VARUN is distributed under the following license:
 
-*I am providing code and resources in this repository to you under an open source license.  Because this is my personal repository, the license you receive to my code and resources is from me.*
+I am providing code and resources in this repository to you under an open source license.  Because this is my personal repository, the license you receive to my code and resources is from me.
 
 More about Licence at [link](https://github.com/t-varun/Face-Recognition/blob/master/LICENSE).
