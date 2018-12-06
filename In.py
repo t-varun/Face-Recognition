@@ -54,11 +54,11 @@ while(True):
     print('Frame took {} seconds'.format(time.time()-last_time))
     last_time = time.time()
     
-    if len(training_data) % 50 == 0:
+    if len(training_data) % 500 == 0:
         print(len(training_data))
-        np.save(file_name, training_data)
-    k = cv2.waitKey(30) & 0xff
-    if k == 27:
+        #np.save(file_name, training_data)
+        time.sleep(5)
+    if cv2.waitKey(30) & 0xff == 'q' == 27:
         break
 cap.release()
 cv2.destroyAllWindows()
