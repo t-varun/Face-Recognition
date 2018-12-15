@@ -1,3 +1,15 @@
+'''
+## Licence:
+
+This repository contains a variety of content; some developed by VARUN, and some from third-parties.
+The third-party content is distributed under the license provided by those parties.
+The content developed by VARUN is distributed under the following license:
+I am providing code and resources in this repository to you under an open source license.
+Because this is my personal repository, the license you receive to my code and resources is from me.
+
+More about Licence at [link](https://github.com/t-varun/Face-Recognition/blob/master/LICENSE).
+'''
+
 import numpy as np
 import pandas as pd
 import cv2
