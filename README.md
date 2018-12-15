@@ -66,9 +66,9 @@ For more details about TensorFlow, you can check [TensorFlow Official Website](h
 
 ## Project:
 
-- Make your own data set with help of In.py [Python File](https://github.com/t-varun/Face-Recognition/blob/master/In.py)
-- Shuffle and get you data cleaned using Out.py [Python File](https://github.com/t-varun/Face-Recognition/blob/master/Out.py)
-- Train the model using Model.py [Python File](https://github.com/t-varun/Face-Recognition/blob/master/Model.py)
+- Make your own data set with help of In.py [Python File](https://github.com/t-varun/Face-Recognition/blob/master/Model/In.py)
+- Shuffle and get you data cleaned using Out.py [Python File](https://github.com/t-varun/Face-Recognition/blob/master/Model/Out.py)
+- Train the model using Model.py [Python File](https://github.com/t-varun/Face-Recognition/blob/master/Model/Model.py)
 which is constructed using Tensorflow (A Deep-Learning Framework). It trains the model to get the highest accuracy.
 
 ## Credits:
