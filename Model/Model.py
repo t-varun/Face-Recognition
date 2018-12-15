@@ -18,7 +18,7 @@ from tensorflow import keras
 import matplotlib.pyplot as plt
 
 # Load the data
-data_name = 'training_data_cleaned.npy'
+data_name = '../training_data_cleaned.npy'
 
 data = np.load(data_name)
 

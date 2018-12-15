@@ -37,7 +37,7 @@ def keys_to_output(keys):
     
     return output
 
-file_name = 'training_data.npy'
+file_name = '../training_data.npy'
 
 if os.path.isfile(file_name):
     print("File exists, loading previous data")
@@ -51,8 +51,8 @@ for i in list(range(3))[::-1]:
     time.sleep(1)
     
 last_time = time.time()
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
+face_cascade = cv2.CascadeClassifier('../haarcascade_frontalface_default.xml')
+eye_cascade = cv2.CascadeClassifier('../haarcascade_eye.xml')
 cap = cv2.VideoCapture(0)
 while(True):
     ret, img = cap.read()
@@ -68,7 +68,7 @@ while(True):
     
     if len(training_data) % 500 == 0:
         print(len(training_data))
-        #np.save(file_name, training_data)
+        np.save(file_name, training_data)
         time.sleep(5)
     if cv2.waitKey(30) & 0xff == 'q' == 27:
         break

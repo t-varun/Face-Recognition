@@ -15,7 +15,7 @@ import pandas as pd
 import cv2
 from random import shuffle
 
-train_data = np.load('training_data.npy')
+train_data = np.load('../training_data.npy')
 
 TOTAL = []
 
@@ -28,7 +28,7 @@ for data in train_data:
         TOTAL.append([img, 1])
 
 shuffle(TOTAL)
-np.save('training_data_cleaned.npy', TOTAL)
+np.save('../training_data_cleaned.npy', TOTAL)
 
 ##for data in train_data:
 ##    img = data[0]
