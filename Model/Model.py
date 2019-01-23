@@ -16,9 +16,13 @@ import numpy as np
 import tensorflow as tf
 from tensorflow import keras
 import matplotlib.pyplot as plt
+import time
 
 # Load the data
 data_name = '../training_data_cleaned.npy'
+Name = 'Face-Recognition_Dense-128x1_{}'.format(int(time.time()))
+
+tensorboard = keras.callbacks.TensorBoard(log_dir='logs/{}'.format(Name))
 
 data = np.load(data_name)
 
@@ -68,13 +72,16 @@ model = keras.Sequential([
     keras.layers.Dense(2, activation=tf.nn.softmax)
 ])
 
-# Compile the Model
+# Compile the model
 model.compile(optimizer=tf.train.AdamOptimizer(), 
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
 
 # Train the Model
-model.fit(train_images, train_labels, epochs=5)
+model.fit(train_images, train_labels, epochs=5, callbacks=[tensorboard])
+## tensorboard --logdir=logs/ --host=127.0.0.1
+
+model.save('FR-TensorModel.model')
 
 # Accuracy of the Model
 test_loss, test_acc = model.evaluate(test_images, test_labels)
@@ -133,4 +140,4 @@ for i in range(num_images):
   plot_image(i, predictions, test_labels, test_images)
   #plt.subplot(num_rows, 2*num_cols, 2*i+2)
   #plot_value_array(i, predictions, test_labels)
-plt.show()
+#plt.show()
