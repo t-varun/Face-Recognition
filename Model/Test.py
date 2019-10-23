@@ -15,24 +15,33 @@ import cv2
 import numpy as np
 import tensorflow as tf
 
-class_names = ['VARUN', 'BUNNY']
+CATEGORIES = ['VARUN', 'BUNNY']
 
-camera = cv2.VideoCapture(0)
+data_name = '../training_data_cleaned.npy'
+
+data = np.load(data_name)
+
+img = []
+
+for item in data:
+    img.append(item[0])
+
+test_images = img[:500]
+
+test_images = np.asarray(test_images)
+test_images = test_images / 255.0
+
+def prepare(path):
+    img_arr = cv2.imread(path, cv2.IMREAD_GRAYSCALE)
+    res_arr = cv2.resize(img_arr, (80, 60))
+    res = np.argmax(res_arr)
+    res = res/255.0
+    return res
+
 model = tf.keras.models.load_model('FR-TensorModel.model')
 
-while(True):
-    ret, img = camera.read()
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    cv2.imshow('img',img)
-    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    img = cv2.resize(img, (80,60))
-    img = np.asarray(img)
-    img = img.reshape((-1, 60, 80))
-    img = img / 255.0
-    prediction = model.predict([img])
-    predicted_label = class_names[np.argmax(prediction)]
-    print(predicted_label)
-    if cv2.waitKey(30) & 0xff == 'q' == 27:
-        break
-cap.release()
-cv2.destroyAllWindows()
+Input = prepare('_DSC0380.jpg')
+
+prediction = model.predict(test_images)
+predicted_label = np.argmax(prediction)
+print(predicted_label)
